@@ -31,7 +31,7 @@ body {
   height: 60%;
   width: 26%;
   background: url("img/login-window-background.jpg");
-  background-size: cover;
+  background-size: contain;
   border-radius: 6px;
   text-align: center;
   display: flex;
@@ -62,12 +62,15 @@ body {
 }
 
 .form-fields {
-  height: 2em;
+  height: 2.5em;
   border-radius: 4px;
   width: 100%;
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  background-color: rgba(82, 75, 75, 0.349);
+  border: 2px solid rgb(59, 59, 59);
+  color: var(--baseFontColor);
 }
 
 .form-labels {
