@@ -1,0 +1,84 @@
+:root {
+  --baseFontFamily:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  --baseFontColor: rgb(209, 210, 211);
+}
+
+.main-login-wrap {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0%;
+}
+.main-login-wrap {
+  height: 100%;
+  width: 100%;
+  background: url("img/night-background.jpg");
+  background-size: cover;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-window {
+  height: 60%;
+  width: 26%;
+  background: url("img/login-window-background.jpg");
+  background-size: cover;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-label {
+  height: auto;
+  width: auto;
+}
+
+.base-font {
+  color: var(--baseFontColor);
+  font-family: var(--baseFontFamily);
+  font-weight: bold;
+}
+
+#login-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 70%;
+  gap: 6%;
+  margin-top: 6%;
+}
+
+.form-fields {
+  height: 2em;
+  border-radius: 4px;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.form-labels {
+  width: 100%;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+}
+
+.submit-button {
+  margin-top: auto;
+  height: 2em;
+  width: 8em;
+}
