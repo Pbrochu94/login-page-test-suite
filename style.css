@@ -128,3 +128,36 @@ body {
 .valid-text {
   color: var(--baseFontColor);
 }
+
+.error-message-mail {
+  position: absolute;
+  top: 35.5%;
+  left: 58%;
+  background-color: rgb(102, 19, 33);
+  height: 3em;
+  width: 18em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--baseFontColor);
+}
+
+.error-message-password {
+  position: absolute;
+  top: 45.5%;
+  left: 58%;
+  background-color: rgb(102, 19, 33);
+  height: 3rem;
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--baseFontColor);
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
