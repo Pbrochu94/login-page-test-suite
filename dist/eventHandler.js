@@ -2,7 +2,19 @@ export { validation };
 import * as selector from "./DOMmanipulations.js";
 let validation = {
     mail: () => {
-        console.log(`valid`);
+        let mail = selector.login.mailSelector()?.value.trim();
+        function verify(password) {
+            console.log(mail);
+            let regex = /^[^@]+@[^@]+\.com$/g;
+            if (mail && regex.test(password))
+                return true;
+            return false;
+        }
+        let isValid = verify(mail);
+        if (isValid) {
+            return console.log(`Email Valid`);
+        }
+        console.log(`Email invalid`);
     },
     password() {
         let password = selector.login
@@ -10,7 +22,7 @@ let validation = {
             ?.value.trim();
         function verify(password) {
             console.log(password);
-            let regex = /^(?=.\d+)(?=.[a-z]+)(?=.[A-Z]+)(?=.*\*)$/;
+            let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/g;
             if (password && regex.test(password))
                 return true;
             return false;
@@ -19,6 +31,6 @@ let validation = {
         if (isValid) {
             return console.log(`Password Valid`);
         }
-        alert(`Password invalid`);
+        console.log(`Password invalid`);
     },
 };

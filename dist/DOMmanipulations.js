@@ -1,7 +1,7 @@
 export { login };
 let login = {
     mailSelector: () => {
-        let selector = document.querySelector(`[type="email"]`);
+        let selector = document.querySelector(`.email-input`);
         return selector;
     },
     passSelector: () => {

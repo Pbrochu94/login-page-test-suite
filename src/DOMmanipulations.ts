@@ -6,7 +6,7 @@ let login: {
 } = {
   mailSelector: () => {
     let selector: HTMLInputElement | null =
-      document.querySelector(`[type="email"]`);
+      document.querySelector(`.email-input`);
     return selector;
   },
   passSelector: () => {
