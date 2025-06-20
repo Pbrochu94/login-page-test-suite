@@ -8,4 +8,18 @@ let login = {
         let selector = document.querySelector(`[name="password"]`);
         return selector;
     },
+    credErrMess: (invalidInput) => {
+        if (invalidInput === `email`) {
+            let mailInput = login.mailSelector();
+            if (mailInput) {
+                mailInput.style.border = "2px solid rgb(102, 19, 33)";
+            }
+        }
+        else {
+            let passInput = login.passSelector();
+            if (passInput) {
+                passInput.style.border = "2px solid rgb(102, 19, 33)";
+            }
+        }
+    },
 };
