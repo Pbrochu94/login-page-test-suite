@@ -1,0 +1,32 @@
+{
+  "name": "login-page-test-suite",
+  "version": "1.0.0",
+  "description": "Login page with simple api server deployed",
+  "main": "./main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Pbrochu94/login-page-test-suite.git"
+  },
+  "keywords": [
+    "api",
+    "typescript",
+    "rest",
+    "postman"
+  ],
+  "author": "Patrick brochu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pbrochu94/login-page-test-suite/issues"
+  },
+  "homepage": "https://github.com/Pbrochu94/login-page-test-suite#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19"
+  }
+}

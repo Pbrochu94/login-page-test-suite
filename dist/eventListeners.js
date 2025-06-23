@@ -14,4 +14,11 @@ let listeners = {
             events.validation.password();
         });
     },
+    submitListener: () => {
+        let selector = document.querySelector(`.submit-button`);
+        selector?.addEventListener(`click`, (e) => {
+            e.preventDefault();
+            events.apiRequest.post();
+        });
+    },
 };
